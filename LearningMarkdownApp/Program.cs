@@ -1,4 +1,8 @@
+using LearningMarkdownApp.Models.Context;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 namespace LearningMarkdownApp
@@ -7,14 +11,23 @@ namespace LearningMarkdownApp
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateHost(args).Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+        public static IWebHost CreateHost(string[] args)
+        {
+            var host = WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>()
+                .Build();
+
+            using (var scope = host.Services.CreateScope())
+            {
+                var dbContext = scope.ServiceProvider.GetService<MainContext>();
+
+                dbContext.Database.Migrate();
+            }
+
+            return host;
+        }
     }
 }
