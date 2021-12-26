@@ -1,6 +1,6 @@
-﻿using LearningMarkdownApp.Models;
+﻿using WebOlioApp.Models;
 
-namespace LearningMarkdownApp.Pages
+namespace WebOlioApp.Pages
 {
     public class IndexModel : PageBaseModel
     {

@@ -1,7 +1,7 @@
-﻿using LearningMarkdownApp.Models.Domain;
+﻿using WebOlioApp.Models.Domain;
 using Microsoft.EntityFrameworkCore;
 
-namespace LearningMarkdownApp.Models.Context
+namespace WebOlioApp.Models.Context
 {
     public class MainContext : DbContext
     {

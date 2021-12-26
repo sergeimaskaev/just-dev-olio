@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LearningMarkdownApp.Models.Domain
+namespace WebOlioApp.Models.Domain
 {
     public class TextRecord
     {

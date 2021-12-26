@@ -1,11 +1,11 @@
-using LearningMarkdownApp.Models.Context;
+using WebOlioApp.Models.Context;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace LearningMarkdownApp
+namespace WebOlioApp
 {
     public class Program
     {

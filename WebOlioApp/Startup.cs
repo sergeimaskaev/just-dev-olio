@@ -1,4 +1,4 @@
-using LearningMarkdownApp.Models.Context;
+using WebOlioApp.Models.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace LearningMarkdownApp
+namespace WebOlioApp
 {
     public class Startup
     {

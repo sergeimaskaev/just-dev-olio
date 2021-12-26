@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace LearningMarkdownApp.Models
+namespace WebOlioApp.Models
 {
     public abstract class PageBaseModel : PageModel
     {
