@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WebOlioApp.Models.Domain
+namespace JustDevOlio.App.Models.Domain
 {
     public class TextRecord
     {

@@ -1,7 +1,7 @@
-﻿using WebOlioApp.Models.Domain;
+﻿using JustDevOlio.App.Models.Domain;
 using Microsoft.EntityFrameworkCore;
 
-namespace WebOlioApp.Models.Context
+namespace JustDevOlio.App.Models.Context
 {
     public class MainContext : DbContext
     {

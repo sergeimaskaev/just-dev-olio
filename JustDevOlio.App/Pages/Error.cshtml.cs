@@ -1,9 +1,9 @@
-using WebOlioApp.Models;
+using JustDevOlio.App.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
-namespace WebOlioApp.Pages
+namespace JustDevOlio.App.Pages
 {
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     [IgnoreAntiforgeryToken]

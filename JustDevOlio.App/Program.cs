@@ -1,11 +1,11 @@
-using WebOlioApp.Models.Context;
+using JustDevOlio.App.Models.Context;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace WebOlioApp
+namespace JustDevOlio.App
 {
     public class Program
     {

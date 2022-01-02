@@ -1,6 +1,6 @@
-﻿using WebOlioApp.Models;
+﻿using JustDevOlio.App.Models;
 
-namespace WebOlioApp.Pages
+namespace JustDevOlio.App.Pages
 {
     public class IndexModel : PageBaseModel
     {
